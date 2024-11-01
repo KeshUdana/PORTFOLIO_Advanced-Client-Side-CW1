@@ -1,56 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         /* Universal reset for removing margins and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: "Roboto", sans-serif;
-        }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
-        header {
-            width: 100%;
-            background-color: #27272a;
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
 
-        h1 {
-            font-family: "Press Start 2P";
-            font-size: 60px;
-            font-weight: 400;
-            color: #cbd5e1;
-            text-align: center;
-        }
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 
-        h2 {
-            font-family: "Rajdhani";
-            font-size: 60px;
-            font-weight: 700;
-            color: #a3e635;
-            text-align: center;
-        }
+header nav ul li {
+    margin: 0 15px;
+}
 
-        nav {
-            background-color: #a3a3a3;
-        }
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        ul {
-            list-style: none;
-            text-align: center;
-            font-size: larger;
-            padding: 0; /* Remove default padding */
-        }
-        
-        li {
-            display: inline-block;
-            margin: 0 40px; /* Adjust spacing between items */
-        }
+main {
+    padding: 20px;
+    display: flex;
+}
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            cursor: pointer;
-        }
+main section {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
 
   
