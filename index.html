@@ -8,35 +8,44 @@
     <title>My Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      .home-card{
+        position: relative; /* "isolate" in Tailwind applies relative positioning */
+        width: 60rem; /* "w-96" corresponds to 384px */
+        border-radius: 1rem; /* "rounded-xl" corresponds to 12px radius */
+        background-color: rgba(255, 255, 255, 0.2); /* "bg-white/20" for semi-transparent white */
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05); /* "shadow-lg" */
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /* "ring-1 ring-black/5" for subtle outline */
+        margin-left: 5rem;
+      }
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Keshawa Udana</h1>
-        <h2>Junior Software Developer</h2>
-    </header>
 
-    
+<body>
+    <header><h1>Keshawa Udana</h1></header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">My Projects"></a></li>
-        <li><a href="blog.html">Blogs"></a></li>
-        <li><a href="contact.hmtl">Let's Connect !</a></li>
-        <li><a href="https://github.com/KeshUdana"><i class='bx bxl-github'></i></a></li>
-      </ul>
+        <li><a href="projects.html">My Projects</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="contact.html">Let's Connect !</a></li>
+       </ul>
     </nav>
     
-      <section>
-          <h2>Hi !</h2>
-          <p>Add text about myself</p>
-      </section>
+    <section style="height: 100vh;">
+      <div class="home-card">
+          <h2 style="text-align: left;font-size: 150px">Hi !</h2>
+          <p style="font-family: Roboto;font-size: x-large;">I am a CS student and full stack developer currently studying machine learning.My team and I are working on an amazing project in the fashion domain.Stay in touch for updates. I am excited & big things are coming </p>
+        </div>
+        </section>
       <aside>
-          <h3>Follow Me</h3>
+          <h3 style="font-size: medium;">Follow Me on</h3>
           <ul>
-              <li><a href="https://twitter.com">Twitter</a></li>
-              <li><a href="https://facebook.com">Facebook</a></li>
-              <li><a href="https://linkedin.com">LinkedIn</a></li>
+              <li><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg' ></i></a></li>
+              <li><a href="https://facebook.com"></a><i class='bx bxl-facebook-circle bx-lg'></i></li>
+              <li><a href="https://linkedin.com"></a><i class='bx bxl-linkedin bx-lg' ></i></li>
           </ul>
       </aside>
 

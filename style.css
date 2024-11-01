@@ -1,62 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         /* Universal reset for removing margins and padding */
-        /* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+        body {
+                font-family: "Roboto", sans-serif;
+                background-image: url('wp2.jpg'); /* Path to your image */
+                background-size: cover; /* Makes the image cover the entire viewport */
+                background-repeat: no-repeat;
+                background-attachment: fixed; /* Keeps the image fixed while scrolling */
+                background-position: center; /* Centers the image */
+                color: #fff; /* Optional: change text color for readability */
+        }
+            
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
+        header {
+            width: 100%;
+            background-color: #b3b4bd;
+        }
 
-header nav ul li {
-    margin: 0 15px;
-}
+        h1{
+            font-family: "Bebas Neue";
+            font-size: 80px;
+            font-weight: 400;
+            color: #66fcf1;
+            background-color: #0b0c10;
+            text-align: center;
+        }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+        h2 {
+            font-family: "Roboto";
+            font-weight: 700;
+            color: #d3d9d4;
+            text-align: center;
+        }
+        p{
+            font-family: "Playfair Display";
+        }
 
-main {
-    padding: 20px;
-    display: flex;
-}
+        nav {
+            background-color: #0b0c10;
+            font-family: "Bebas Neue";
+            color:#66fcf1;
+            font-size: large;
+        }
+        aside {
+            width: 200px; /* Set a width that fits your design */
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 15px;
+            text-align: center;
+        }
+        
+        /*Pseudo Classes intergrated*/
+        nav:hover{
+            color: #0b0c10;
+            background-color: #66fcf1;
+        }
 
-main section {
-    flex: 3;
-}
+        ul {
+            list-style: none;
+            text-align: center;
+            font-size: larger;
+            padding: 0; /* Remove default padding */
+        }
+        
+        li {
+            display: inline-block;
+            margin: 0 40px; /* Adjust spacing between items */
+        }
 
-aside {
-    flex: 1;
-    padding: 15px;
-    background-color: #f4f4f4;
-    margin-left: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
-}
-
+        a {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
 
   
