@@ -8,13 +8,19 @@
 
         body {
                 font-family: "Roboto", sans-serif;
-                background-image: url('wp2.jpg'); /* Path to your image */
-                background-size: cover; /* Makes the image cover the entire viewport */
-                background-repeat: no-repeat;
-                background-attachment: fixed; /* Keeps the image fixed while scrolling */
-                background-position: center; /* Centers the image */
                 color: #fff; /* Optional: change text color for readability */
         }
+        .background-gradient {
+            position: absolute;
+            inset: 0;
+            z-index: -10;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 6rem 1.25rem;
+            background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+          }
             
 
 
@@ -52,16 +58,19 @@
             width: 200px; /* Set a width that fits your design */
             position: fixed;
             right: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 80%;
+            transform: translateX(50%);
             padding: 15px;
-            text-align: center;
+            text-align: right;
         }
         
         /*Pseudo Classes intergrated*/
         nav:hover{
             color: #0b0c10;
             background-color: #66fcf1;
+        }
+        aside:hover{
+            color:#66fcf1
         }
 
         ul {
