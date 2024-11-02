@@ -5,24 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css"></head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Fullscreen section styling */
+        section {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 20px;
+            background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            max-width: 300px;
+            padding: 24px;
+            background-color: white;
+            border: 1px solid #e5e7eb; /* gray-200 */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        .card h5 {
+            margin-bottom: 12px;
+            font-size: 1.5rem; /* 2xl */
+            font-weight: bold;
+            color: #1f2937; /* gray-900 */
+        }
+
+        .card p {
+            margin-bottom: 16px;
+            color: #4b5563; /* gray-700 */
+        }
+
+        .card a {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 12px;
+            font-size: 0.875rem; /* text-sm */
+            font-family: "Roboto";
+            color: white;
+            background-color: #3b82f6; /* blue-700 */
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .card a:hover {
+            background-color: #2563eb; /* blue-800 */
+        }
+
+        header {
+            text-align: center;
+            padding: 16px;
+        }
+
+     
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+    </style>
+</head>
 
 <body>
-   <!-- Background gradient -->
-   <div class="background-gradient"></div>
-    <header><h1>Projects</h1></header>
+    <!-- Background gradient -->
+    <div class="background-gradient"></div>
+
+    <!-- Header -->
+    <header>
+        <h1>Projects</h1><!-- Navigation Bar -->
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">My Projects</a></li>
-        <li><a href="blog.html">Blogs</a></li>
-        <li><a href="contact.html">Let's Connect !</a></li>
-       </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="contact.html">Let's Connect!</a></li>
+        </ul>
     </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section>
+        <div class="container">
+            <div class="card">
+                <h5>Library Management System</h5>
+                <p>Lorem Ipsum fhghghghghghg jjjdksks wkdadadnwowkcak</p>
+                <a href="#">Check Repo</a>
+            </div>
+
+            <div class="card">
+                <h5>Clothing Model Classification</h5>
+                <p>Lorem Ipsum fhghghghghghg jjjdksks wkdadadnwowkcak</p>
+                <a href="#">See more</a>
+            </div>
+
+            <div class="card">
+                <h5>Project 3</h5>
+                <p>Lorem Ipsum fhghghghghghg jjjdksks wkdadadnwowkcak</p>
+                <a href="#">See more</a>
+            </div>
+
+            <div class="card" style="display: none;">
+                <h5>Project 4</h5>
+                <p>Lorem Ipsum fhghghghghghg jjjdksks wkdadadnwowkcak</p>
+                <a href="#">See more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MySite</p>
+    </footer>
 </body>
-
-<footer>
-
-</footer>
-
 </html>
