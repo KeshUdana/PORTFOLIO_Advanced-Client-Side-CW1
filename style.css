@@ -185,5 +185,14 @@ nav ul {
             color: inherit;
             cursor: pointer;
         }
+          
+        footer {
+            text-align: center;
+            padding: 10px;
+            background:transparent;
+            color: white;
+            font-size: 0.9rem;
+        }
+
 
   
