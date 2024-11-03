@@ -6,7 +6,14 @@
             box-sizing: border-box;
         }
 /* Mobile-first styles */
-       
+        /*Navigation Bar*/
+        nav  {
+            background-color: #0b0c10;
+            font-family: "Bebas Neue";
+            color:#3b82f6;
+            font-size: large;
+        }
+        /**/
         body {
             font-family: "Roboto", sans-serif;
             color: #fff;
@@ -80,57 +87,15 @@
             font-size: 4rem;
             margin: 10px 0;
         }
-        /*Navigation Bar*/
-        nav  {
-            background-color: #0b0c10;
-            font-family: "Bebas Neue";
-            color:#3b82f6;;
-            font-size: large;
-            
-            
-        }
-        nav ul{display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 10px 0;
-            margin: 0;
-            width: 100%;
-        }
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            font-size: 1em;
-            color: #333;
-        }
-                
+       
+          
       body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
       }
       
-nav ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        list-style: none;
-        padding: 0;
-        font-size: 1rem;
-      }
-
-      nav ul li {
-        margin: 0 10px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-            font-size: 1rem;
-            color: #333;
-      }
-
+   
 
         h2 {
             font-family: "Roboto";
