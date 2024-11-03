@@ -10,129 +10,173 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-      
-      .home-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        max-width: 90%;
-        text-align: center;
-        margin: 20px auto;
-      }
+       
 
-      .home-card p {
-        margin: 0;
-        font-size: 1em;
-        line-height: 1.5;
-      }
-
-      h2 {
-        font-size: 3em;
-        text-align: center;
-        margin: 20px 0;
-      }
-
-      footer {
-        text-align: center;
-        padding: 20px 0;
-        font-size: 0.9em;
-      }
-
-      .social-links ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
-      }
-
-      .social-links ul li {
-        margin: 0 10px;
-      }
-
-      /* Tablet and larger screen styles */
-      @media (min-width: 768px) {
-        .home-card {
-          max-width: 600px;
-          padding: 30px;
-        }
-
-        h2 {
-          font-size: 5em;
-          text-align: left;
+        header h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 10px;
         }
 
         nav ul {
-          flex-direction: row;
-          justify-content: center;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            width: 100%;
+            font-size: 1rem;
         }
 
         nav ul li {
-          margin: 0 15px;
-        }
-      }
-
-      /* Desktop and larger screen styles */
-      @media (min-width: 1024px) {
-        h2 {
-          font-size: 6em;
+            margin: 0 8px;
         }
 
-        header h1 {
-          font-size: 2.5em;
-        }
-        
         nav ul li a {
-          font-size: 1.3em;
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .home-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .home-card img {
+            width: 150px; /* Smaller image for mobile */
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .home-card p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0;
         }
 
         footer {
-          font-size: 1em;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
         }
-      }
+
+        .social-links ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-links ul li {
+            margin: 0 10px;
+        }
+
+        /* Tablet and larger screen styles */
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 4.5rem;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+            nav ul {
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+            padding: 10px 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        nav ul li {
+            margin: 0 8px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+        }
+
+            .home-card {
+                max-width: 600px;
+                padding: 30px;
+            }
+
+            .home-card img {
+                width: 300px; /* Larger image for tablet and desktop */
+            }
+
+            footer {
+                font-size: 1em;
+            }
+        }
+
+        /* Desktop and larger screen styles */
+        @media (min-width: 1024px) {
+            h2 {
+                font-size: 4rem;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Background gradient -->
-    <div class="background-gradient"></div>
-
+  <div class="background-gradient"></div>
     <header><h1>Keshawa Udana</h1></header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">My Projects</a></li>
         <li><a href="blog.html">Blogs</a></li>
-        <li><a href="contact.html">Let's Connect !</a></li>
-       </ul>
+        <li><a href="contact.html">Let's Connect!</a></li>
+      </ul>
     </nav>
-    
+
     <section style="height: 100vh;">
-      <h2>Hi !</h2>
+      <h2>Hi!</h2>
       <div class="home-card">
-        <img src="mypic.jpeg">
-          <p> 
-            🌟 Welcome to My Corner of the Internet! 🌟
-            Hey there! I'm a passionate Computer Science student diving deep into the world of full stack development. 
-            Right now, I'm on an exciting journey exploring machine learning, and my awesome team and I are cooking up something special in the 
-            fashion industry!
-            ✨ Get ready for some thrilling updates and innovations! Big things are on the horizon, and I can’t wait to share them with you! Let’s connect and embark on this together! 😄
-          </p>
+        <img src="mypic.jpeg" alt="Profile Picture">
+        <p>
+          🌟 Welcome to My Corner of the Internet! 🌟
+          Hey there! I'm a passionate Computer Science student diving deep into the world of full stack development.
+          Right now, I'm on an exciting journey exploring machine learning, and my awesome team and I are cooking up something special in the
+          fashion industry!
+          ✨ Get ready for some thrilling updates and innovations! Big things are on the horizon, and I can’t wait to share them with you! Let’s connect and embark on this together! 😄
+        </p>
       </div>
     </section>
 
     <footer>
       <aside class="social-links"> 
           <ul>
-              <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg' ></i></a></li>
-              <li class="linkedin-link"><a href="https://linkedin.com"></a><i class='bx bxl-linkedin bx-lg' ></i></li>
-              <li class="facebook-link"><a href="https://facebook.com"></a><i class='bx bxl-facebook-circle bx-lg'></i></li>
+              <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg'></i></a></li>
+              <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
+              <li class="facebook-link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle bx-lg'></i></a></li>
           </ul>
       </aside>
       <p>&copy; 2024 MySite</p>
     </footer>
 </body>
+
 </html>

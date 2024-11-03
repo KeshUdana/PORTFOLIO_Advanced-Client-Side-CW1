@@ -1,105 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 
     <style>
-        section {
-            width: 300px; /* Adjust width as needed */
-            margin: 0 auto;
-        }
         
-        form {
+      
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        nav ul li {
+            margin: 0 8px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .home-card {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            margin: 20px auto;
+            text-align: center;
         }
-    
-        label {
-            margin-top: 10px;
-            font-weight: bold;
+
+        .home-card img {
+            width: 150px; /* Smaller image for mobile */
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
-    
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+
+        .home-card p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0;
         }
-    
-        textarea {
-            resize: vertical;
-            height: 100px;
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
         }
-    
-        input[type="checkbox"] {
-            margin-top: 10px;
-            margin-bottom: 15px;
+
+        .social-links ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
         }
-    
-        button {
-            padding: 10px;
-            background-color: #0a21c0;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
+
+        .social-links ul li {
+            margin: 0 10px;
         }
-    
-        button:hover {
-            background-color: #050a44;
+
+        /* Tablet and larger screen styles */
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 3em;
+            }
+
+            .home-card {
+                max-width: 600px;
+                padding: 30px;
+            }
+
+            .home-card img {
+                width: 200px; /* Larger image for tablet and desktop */
+            }
+
+            footer {
+                font-size: 1em;
+            }
+        }
+
+        /* Desktop and larger screen styles */
+        @media (min-width: 1024px) {
+            h2 {
+                font-size: 4em;
+            }
+
+            nav ul li a {
+                font-size: 1.2em;
+            }
         }
     </style>
-
-
-
 </head>
 
 <body>
-    <!-- Background gradient -->
-   <div class="background-gradient"></div>
-    <header><h1>Let's Connect</h1></header>
+    <div class="background-gradient"></div>
+    <header><h1>Keshawa Udana</h1></header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">My Projects</a></li>
         <li><a href="blog.html">Blogs</a></li>
-        <li><a href="contact.html">Let's Connect !</a></li>
-       </ul>
+        <li><a href="contact.html">Let's Connect!</a></li>
+      </ul>
     </nav>
 
-    <main>
-        <section>
-            
-            <h2>Let's get in touch</h2>
-            <form action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-        
-                <label for="newsletter">Subscribe to our newsletter?</label>
-                <input type="checkbox" id="newsletter" name="newsletter">
-        
-                <button type="submit">Submit</button>
-            </form>
-        
-        </section>
-    </main>
+    <section style="height: 100vh;">
+      <h2>Hi!</h2>
+      <div class="home-card">
+        <img src="mypic.jpeg" alt="Profile Picture">
+        <p>
+          🌟 Welcome to My Corner of the Internet! 🌟<br/>
+          Hey there! I'm a passionate Computer Science student diving deep into the world of full stack development.
+          Right now, I'm on an exciting journey exploring machine learning, and my awesome team and I are cooking up something special in the
+          fashion industry!
+          ✨ Get ready for some thrilling updates and innovations! Big things are on the horizon, and I can’t wait to share them with you! Let’s connect and embark on this together! 😄
+        </p>
+      </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 My Personal Website</p>
+      <aside class="social-links"> 
+          <ul>
+              <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg'></i></a></li>
+              <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
+              <li class="facebook-link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle bx-lg'></i></a></li>
+          </ul>
+      </aside>
+      <p>&copy; 2024 MySite</p>
     </footer>
 </body>
+
+</html>
