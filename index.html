@@ -10,22 +10,87 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+      
       .home-card {
-        display: flex; /* Use Flexbox to center content */
-        justify-content: center; /* Center horizontally */
-        padding: 20px; /* Padding around the content */
-        border-radius: 8px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        max-width: 600px; /* Max width for the card */
-        text-align: center; /* Center text */
-        margin: 0 auto; /* Center the card horizontally within the section */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 90%;
+        text-align: center;
+        margin: 20px auto;
       }
 
       .home-card p {
-        margin: 0; /* Remove default margin from paragraph */
-        font-family: 'Roboto', sans-serif; /* Ensure font is applied */
-        font-size: x-large; /* Font size */
-        line-height: 1.5; /* Improve readability with line height */
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.5;
+      }
+
+      h2 {
+        font-size: 3em;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 0.9em;
+      }
+
+      .social-links ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      .social-links ul li {
+        margin: 0 10px;
+      }
+
+      /* Tablet and larger screen styles */
+      @media (min-width: 768px) {
+        .home-card {
+          max-width: 600px;
+          padding: 30px;
+        }
+
+        h2 {
+          font-size: 5em;
+          text-align: left;
+        }
+
+        nav ul {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        nav ul li {
+          margin: 0 15px;
+        }
+      }
+
+      /* Desktop and larger screen styles */
+      @media (min-width: 1024px) {
+        h2 {
+          font-size: 6em;
+        }
+
+        header h1 {
+          font-size: 2.5em;
+        }
+        
+        nav ul li a {
+          font-size: 1.3em;
+        }
+
+        footer {
+          font-size: 1em;
+        }
       }
     </style>
 </head>
@@ -45,13 +110,14 @@
     </nav>
     
     <section style="height: 100vh;">
-      <h2 style="text-align: left;font-size: 150px">Hi !</h2>
+      <h2>Hi !</h2>
       <div class="home-card">
+        <img src="">
           <p> 
             🌟 Welcome to My Corner of the Internet! 🌟
-
-            Hey there! I'm a passionate Computer Science student diving deep into the world of full stack development. Right now, I'm on an exciting journey exploring machine learning, and my awesome team and I are cooking up something special in the fashion industry!
-            
+            Hey there! I'm a passionate Computer Science student diving deep into the world of full stack development. 
+            Right now, I'm on an exciting journey exploring machine learning, and my awesome team and I are cooking up something special in the 
+            fashion industry!
             ✨ Get ready for some thrilling updates and innovations! Big things are on the horizon, and I can’t wait to share them with you! Let’s connect and embark on this together! 😄
           </p>
       </div>
