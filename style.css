@@ -92,7 +92,6 @@
 
         /*CSS for the links placed in aside*/
         aside {
-            aside {
                 width: 150px;
                 position: fixed;
                 right: 10px;
@@ -100,8 +99,8 @@
                 transform: translateY(-50%); /* Centers vertically */
                 padding: 15px;
                 text-align: center;
-            }
         }
+        
 
         .social-links {
             position: absolute;
