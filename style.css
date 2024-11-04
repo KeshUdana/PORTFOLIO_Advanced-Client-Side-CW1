@@ -39,7 +39,12 @@
         nav a {
             font-size: medium; /* Slightly reduce font size for links */
         }
-        /**/
+
+nav a:hover{
+    color: #66fcf1;
+    font-weight: 400;
+}
+
         body {
             font-family: "Roboto", sans-serif;
             color: #fff;
@@ -128,11 +133,7 @@ h2 {
     }
         
         /*Pseudo Classes intergrated*/
-        nav a:hover{
-            color: #0b0c10;
-            background-color: #66fcf1;
-        }
-
+        
         .github-link:hover{
             color: #2dba4e;
         }
