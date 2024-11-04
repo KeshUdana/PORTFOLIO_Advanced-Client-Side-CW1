@@ -7,30 +7,25 @@
         }
 /* Mobile-first styles */
         /*Navigation Bar*/
-        nav  {
-            background-color: #0b0c10;
-            font-family: "Bebas Neue";
-            color:#3b82f6;
-            font-size: large;
-            
-}
-nav ul {
-    list-style: none;
-    text-align: center;
-    font-size: larger;
-    padding: 0; /* Remove default padding */
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 40px; /* Adjust spacing between items */
-}
-
-nav a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
+        header {
+            font-size: 2rem; /* Reduce font size for header */
+        }
+    
+        h1 {
+            font-size: 2.5rem; /* Reduce font size for h1 */
+        }
+    
+        nav ul {
+            padding: 0;
+        }
+    
+        nav li {
+            margin: 0 15px; /* Reduce spacing between nav items */
+        }
+    
+        nav a {
+            font-size: medium; /* Slightly reduce font size for links */
+        }
         /**/
         body {
             font-family: "Roboto", sans-serif;
