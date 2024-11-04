@@ -14,6 +14,23 @@
             font-size: large;
             
 }
+nav ul {
+    list-style: none;
+    text-align: center;
+    font-size: larger;
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 40px; /* Adjust spacing between items */
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
         /**/
         body {
             font-family: "Roboto", sans-serif;
