@@ -14,68 +14,92 @@
             text-align: center;
             margin: 20px 0;
         }
-.home-card {
+
+
+/* Main container styling */
+.container {
+    text-align: center;
+    padding: 1rem;
+    }
+
+/* Title styling */
+    .title {
+    font-size: 1.5rem;
+    color: #06b6d4; /* cyan-400 */
+   
+}
+
+/* Subtitle styling */
+.subtitle {
+    font-size: 0.75rem;
+    color: #71717a; /* zinc-400 */
+}
+
+/* Tech stack label styling */
+.tech-stack-label {
+    font-size: 1.rem;
+    font-family: "Roboto";
+    color: #c026d3; /* fuchsia-700 */
+    margin-top: 1.5rem;
+}
+
+/* Tech stack grid styling */
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Start with 2 columns for mobile */
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem auto;
+    max-width: 100%; /* Set max-width to 100% for flexibility */
+}
+
+        /* Education section styling */
+        .education-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
-            margin: 20px auto;
-            text-align: center;
+            margin-top: 1.5rem;
         }
 
-        .home-card img {
-            width: 150px;
+        .education-text {
+            font-size: 1.25rem;
+            color: #71717a; /* zinc-400 */
+            margin: 1rem 0;
+        }
+
+        /* Image styling */
+        .icon-image {
+            width: 50px;
             height: auto;
-            border-radius: 50%;
-            margin-bottom: 20px;
         }
 
-        .home-card p {
-            font-size: 1em;
-            line-height: 1.5;
-            margin: 0;
+        .large-icon-image {
+            width: 100px;
+            height: auto;
         }
 
         
 /* Tablet and larger screen styles */
 @media (min-width: 768px) {
+h2 {
+    font-size: 4.5rem;
+}
+footer {
+    font-size: 1em;
+}
+}
 
-
-
-
-            h2 {
-                font-size: 4.5rem;
-            }
-
-            .home-card {
-                max-width: 600px;
-                padding: 30px;
-            }
-
-            .home-card img {
-                width: 300px;
-            }
-
-            footer {
-                font-size: 1em;
-            }
+/* Desktop and larger screen styles */
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 4rem;
+    }
             
-        }
-
-        /* Desktop and larger screen styles */
-        @media (min-width: 1024px) {
-            h2 {
-                font-size: 4rem;
-            }
-            
-            footer {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    footer {
+        font-size: 1rem;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -92,19 +116,45 @@
       </ul>
     </nav>
 
-    <section style="height: 100vh;">
-      <div class="home-card">
-        <img src="mypic.jpeg" alt="Profile Picture">
-        <p>
-          🌟 Welcome to My Corner of the Internet! 🌟
-          Hey there! I'm a passionate Computer Science student diving deep into the world of full stack development.
-          Right now, I'm on an exciting journey exploring machine learning, and my awesome team and I are cooking up something special in the
-          fashion industry!
-          ✨ Get ready for some thrilling updates and innovations! Big things are on the horizon, and I can’t wait to share them with you! 
-        </p>
-      </div>
+    <section class="section-background">
+        <div class="container">
+            <!-- Title -->
+            <h1 class="title">Academic Background</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">Undergraduate BSc. Computer Science, University of Westminster</p>
+            
+            <!-- University Logos -->
+            <div>
+                <img src="/Westminster University-01 (1).svg" alt="University of Westminster logo" class="large-icon-image">
+                <img src="/iitlogo.svg" alt="IIT logo" class="large-icon-image">
+            </div>
+            
+            <!-- Tech Stack Label -->
+            <p class="tech-stack-label">TECH STACK</p>
+
+            <!-- Tech Stack Grid -->
+            <div class="tech-stack-grid">
+                <img src="/python-svgrepo-com (1).svg" alt="Python logo" class="icon-image">
+                <img src="/java-4-logo-svgrepo-com (1).svg" alt="Java logo" class="icon-image">
+                <img src="/javascript-svgrepo-com (1).svg" alt="JavaScript logo" class="icon-image">
+                <img src="/typescript-logo-svgrepo-com (1).svg" alt="TypeScript logo" class="icon-image">
+                <img src="/tailwind-svgrepo-com (1).svg" alt="Tailwind CSS logo" class="icon-image">
+                <img src="/gsap-greensock (1).svg" alt="GSAP logo" class="icon-image">
+                <img src="/nodejs-1-logo-svgrepo-com (1).svg" alt="Node.js logo" class="icon-image">
+                <img src="/react-svgrepo-com (1).svg" alt="React logo" class="icon-image">
+                <img src="/nextjs-icon-svgrepo-com (1).svg" alt="Next.js logo" class="icon-image">
+                <img src="/vite-svgrepo-com (1).svg" alt="Vite logo" class="icon-image">
+                <img src="/aws-svgrepo-com (1).svg" alt="AWS logo" class="icon-image">
+                <img src="/vercel-svgrepo-com (1).svg" alt="Vercel logo" class="icon-image">
+                <img src="/mongo-svgrepo-com.svg" alt="MongoDB logo" class="icon-image">
+                <img src="/tensorflow-svgrepo-com (1).svg" alt="TensorFlow logo" class="icon-image">
+                <img src="/numpy-svgrepo-com (1).svg" alt="NumPy logo" class="icon-image">
+                <img src="/pandas-svgrepo-com (1).svg" alt="Pandas logo" class="icon-image">
+            </div>
+
+            
     </section>
-    </div>
 
     <footer>
         <ul class="social-links">
