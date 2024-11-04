@@ -8,21 +8,43 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        section {
-            width: 300px; /* Adjust width as needed */
+        /* Ensure the page takes full height */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body and html styles for flexbox layout */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Flex container to fill the rest of the page */
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+section {
+            width: 300px;
             margin: 0 auto;
         }
-        
+
         form {
             display: flex;
             flex-direction: column;
         }
-    
+
         label {
             margin-top: 10px;
             font-weight: bold;
         }
-    
+
         input[type="text"],
         input[type="email"],
         textarea {
@@ -33,17 +55,17 @@
             border-radius: 5px;
             border: 1px solid #ccc;
         }
-    
+
         textarea {
             resize: vertical;
             height: 100px;
         }
-    
+
         input[type="checkbox"] {
             margin-top: 10px;
             margin-bottom: 15px;
         }
-    
+
         button {
             padding: 10px;
             background-color: #0a21c0;
@@ -53,72 +75,66 @@
             cursor: pointer;
             font-weight: bold;
         }
-    
+
         button:hover {
             background-color: #050a44;
         }
+
         /* Tablet and larger screen styles */
         @media (min-width: 768px) {
-           
-
             h2 {
                 font-size: 3rem;
             }
-            
-    }
+        }
     </style>
-
-
-
 </head>
 
 <body>
-    <!-- Background gradient -->
-   <div class="background-gradient"></div>
-    <header><h1>Let's Connect</h1></header>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="projects.html">My Projects</a></li>
-          <li><a href="blog.html">Blogs</a></li>
-          <li><a href="contact.html">Let's Connect!</a></li>
-        </ul>
-      </nav>
+    <div class="background-gradient"></div>
+    <div class="content-wrapper">
+        
+        <header><h1>Let's Connect</h1></header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="projects.html">My Projects</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="contact.html">Let's Connect!</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section>
+        <main>
+            <section>
+                <h3 style="text-align: center; font-family: Roboto;">Let's get in touch</h3>
+                <form action="/submit" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
             
-            <h3 style="text-align: center;font-family: Roboto;">Let's get in touch</h3>
-            <form action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-        
-                
-                <div style="display: flex;flex-direction: column;align-items: center;">
-                    <label for="newsletter">Subscribe to our newsletter?</label>
-                <input type="checkbox" id="newsletter" name="newsletter">
-            </div>
-                <button type="submit">Submit</button>
-            </form>
-        
-        </section>
-    </main>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+            
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <label for="newsletter">Subscribe to our newsletter?</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
 
-     <!-- Footer -->
-     <footer>
+    <!-- Footer -->
+    <footer>
         <ul class="social-links">
-              <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg'></i></a></li>
-              <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
-              <li class="facebook-link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle bx-lg'></i></a></li>
-          </ul>
-
-      <p>&copy; 2024 MySite</p>
+            <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg'></i></a></li>
+            <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
+            <li class="facebook-link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle bx-lg'></i></a></li>
+        </ul>
+        <p>&copy; 2024 MySite</p>
     </footer>
 </body>
+</html>
