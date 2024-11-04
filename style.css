@@ -9,18 +9,31 @@
         /*Navigation Bar*/
         header {
             font-size: 2rem; /* Reduce font size for header */
+        
+            width: 100%;
+            background-color: transparent;
+
+            text-align: center;
+            margin-top: 0px;
         }
     
-        h1 {
-            font-size: 2.5rem; /* Reduce font size for h1 */
+        h1{
+            font-family: "Bebas Neue";
+            font-weight: 400;
+            color: #1e90ff;
+            background-color: #0b0c10;
+            text-align: center;
+            text-align: center;
+            font-size: 3rem;
+            margin: 10px 0;
         }
-    
+       
         nav ul {
-            padding: 0;
+            padding: 10px;
         }
     
         nav li {
-            margin: 0 10px; /* Reduce spacing between nav items */
+            margin: 0 12px; /* Reduce spacing between nav items */
         }
     
         nav a {
@@ -81,33 +94,13 @@
             
 
 
-        header {
-            width: 100%;
-            background-color: transparent;
-            font-size: 3rem;
-            text-align: center;
-            margin-top: 10px;
-        }
+        
         
         
 
-        h1{
-            font-family: "Bebas Neue";
-            font-weight: 400;
-            color: #1e90ff;
-            background-color: #0b0c10;
-            text-align: center;
-            text-align: center;
-            font-size: 4rem;
-            margin: 10px 0;
-        }
-       
+      
           
-      body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-      }
+     
       
    
 
