@@ -5,74 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Portfolio</title>
+    <!-- Boxicons library for social media icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 
-  <style>
+    <style>
+    /* Style for main heading */
+    h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 20px 0;
+    }
 
-  h2 {
-    font-size: 2em;
-    text-align: center;
-    margin: 20px 0;
-  }
+    /* Card container for home section */
+    .home-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
 
-  .home-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    margin: 20px auto;
-    text-align: center;
-  }
+    /* Styling for profile image in the home-card */
+    .home-card img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%; /* Makes the image circular */
+        margin-bottom: 20px;
+    }
 
-  .home-card img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
+    /* Paragraph styling in the home-card */
+    .home-card p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0;
+    }
 
-  .home-card p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 0;
-  }
+    /* Styles for tablet and larger screens */
+    @media (min-width: 768px) {
 
-        
-  /* Tablet and larger screen styles */
-  @media (min-width: 768px) {
+        /* Increases header font size */
+        header h1 {
+            font-size: 5rem;
+        }
 
-  header h1{
-    font-size: 5rem;
-  }
+        /* Increases navigation link font size */
+        nav ul a {
+            font-size: large;
+        }
 
-  nav ul a{
-    font-size: large;
-  }
-  h2 {
-    font-size: 4.5rem;
-  }
+        /* Increases main heading font size */
+        h2 {
+            font-size: 4.5rem;
+        }
 
-  .home-card {
-    max-width: 600px;
-    padding: 30px;
-  }
+        /* Sets max-width and padding for the home-card on larger screens */
+        .home-card {
+            max-width: 600px;
+            padding: 30px;
+        }
 
-  .home-card img {
-    width: 300px;
-  }
+        /* Increases the profile image size on larger screens */
+        .home-card img {
+            width: 300px;
+        }
 
-  footer {
-    font-size: 1em;
-  }
-}
-
-
-
-  </style>
+        /* Increases footer font size */
+        footer {
+            font-size: 1em;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -81,8 +89,8 @@
   <div class="container">
     <header><h1>Keshawa Udana</h1></header>
 
-     <!-- Navigation Bar -->
-     <nav>
+    <!-- Navigation Bar -->
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="About.html">About</a></li>
@@ -92,6 +100,7 @@
       </ul>
     </nav>
 
+    <!-- Home section with introductory card -->
     <section style="height: 100vh;">
       <div class="home-card">
         <img src="Assets\mypic.jpeg" alt="Profile Picture">
@@ -104,16 +113,16 @@
         </p>
       </div>
     </section>
-    </div>
+  </div>
 
-    <footer>
-        <ul class="social-links">
-              <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg'></i></a></li>
-              <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
-              <li class="facebook-link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle bx-lg'></i></a></li>
-          </ul>
+  <footer>
+    <!-- Social media links with icons -->
+    <ul class="social-links">
+      <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg'></i></a></li>
+      <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
+      <li class="facebook-link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle bx-lg'></i></a></li>
+    </ul>
     <p>&copy; 2024 MySite</p>
-    </footer>
+  </footer>
 </body>
-
 </html>
