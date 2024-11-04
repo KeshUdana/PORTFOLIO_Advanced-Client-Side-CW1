@@ -8,80 +8,81 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 
-<style>
+  <style>
+
   h2 {
     font-size: 2em;
     text-align: center;
     margin: 20px 0;
   }
-.home-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
-  margin: 20px auto;
-  text-align: center;
-}
 
-.home-card img {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
+  .home-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
 
-        .home-card p {
-            font-size: 1em;
-            line-height: 1.5;
-            margin: 0;
-        }
+  .home-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .home-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+  }
 
         
-/* Tablet and larger screen styles */
-@media (min-width: 768px) {
+  /* Tablet and larger screen styles */
+  @media (min-width: 768px) {
 
+  h2 {
+    font-size: 4.5rem;
+  }
 
+  .home-card {
+    max-width: 600px;
+    padding: 30px;
+  }
 
+  .home-card img {
+    width: 300px;
+  }
 
-            h2 {
-                font-size: 4.5rem;
-            }
+  footer {
+    font-size: 1em;
+  }
+}
 
-            .home-card {
-                max-width: 600px;
-                padding: 30px;
-            }
-
-            .home-card img {
-                width: 300px;
-            }
-
-            footer {
-                font-size: 1em;
-            }
+/* Desktop and larger screen styles */
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 4rem;
+  }
             
-        }
+  footer {
+    font-size: 1rem;
+    }
+}
 
-        /* Desktop and larger screen styles */
-        @media (min-width: 1024px) {
-            h2 {
-                font-size: 4rem;
-            }
-            
-            footer {
-                font-size: 1rem;
-            }
-        }
-    </style>
+  </style>
 </head>
 
 <body>
   <div class="background-gradient"></div>
+
   <div class="container">
     <header><h1>Keshawa Udana</h1></header>
+
      <!-- Navigation Bar -->
      <nav>
       <ul>
@@ -113,8 +114,7 @@
               <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
               <li class="facebook-link"><a href="https://facebook.com"><i class='bx bxl-facebook-circle bx-lg'></i></a></li>
           </ul>
-
-      <p>&copy; 2024 MySite</p>
+    <p>&copy; 2024 MySite</p>
     </footer>
 </body>
 
