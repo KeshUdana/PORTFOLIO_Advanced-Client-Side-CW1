@@ -20,7 +20,7 @@
         }
     
         nav li {
-            margin: 0 15px; /* Reduce spacing between nav items */
+            margin: 0 10px; /* Reduce spacing between nav items */
         }
     
         nav a {
@@ -38,7 +38,7 @@
         }
         
         .container {
-            flex: 1; /* Pushes the footer down */
+            flex: 4; /* Pushes the footer down */
             display: flex;
             flex-direction: column;
         }
@@ -53,6 +53,7 @@
         font-size: 0.9rem;
         padding: 10px 0;
         text-align: center;
+        z-index: 1000;
     }
 
     /* Social Icon Styling */

@@ -79,15 +79,28 @@
         
         /* Tablet and larger screen styles */
         @media (min-width: 768px) {
-            
-
-        
-            footer {
-                font-size: 1em;
+            h2 {
+                font-size: 4.5rem;
             }
             
+            nav ul {
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+            padding: 10px 0;
+            margin: 0;
+            width: 100%;
+        }
 
-       
+        nav ul li {
+            margin: 0 8px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+        }
         .container {
             display: flex;
             flex-direction: row; /* Stack cards in a column on smaller screens */
@@ -176,7 +189,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+        <footer>
         <ul class="social-links">
               <li class="github-link"><a href="https://github.com/KeshUdana"><i class='bx bxl-github bx-lg'></i></a></li>
               <li class="linkedin-link"><a href="https://linkedin.com"><i class='bx bxl-linkedin bx-lg'></i></a></li>
