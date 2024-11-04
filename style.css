@@ -6,27 +6,27 @@
     box-sizing: border-box;
 }
 /* Mobile-first styles */
-        /*Navigation Bar*/
-        header {
-            font-size: 2rem; /* Reduce font size for header */
-        
-            width: 100%;
-            background-color: transparent;
+header {
+    font-size: 2rem; /* Reduce font size for header */
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 0px;
+}
 
-            text-align: center;
-            margin-top: 0px;
-        }
+h1{
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    color: #1e90ff;
+    text-align: center;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+ 
+/*Navigation Bar*/
+       
     
-        h1{
-            font-family: "Bebas Neue";
-            font-weight: 400;
-            color: #1e90ff;
-            background-color: #0b0c10;
-            text-align: center;
-            text-align: center;
-            font-size: 3rem;
-            margin: 10px 0;
-        }
+     
        
         nav ul {
             padding: 10px;
