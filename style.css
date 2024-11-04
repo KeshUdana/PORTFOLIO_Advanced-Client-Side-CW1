@@ -6,7 +6,6 @@
 }
 /* Mobile-first styles */
 header {
-    font-size: 2rem; /* Reduce font size for header */
     width: 100%;
     background-color: transparent;
     text-align: center;
@@ -23,21 +22,18 @@ h1{
 }
  
 /*Navigation Bar*/
-       
+
+nav ul {
+    padding: 10px;
+}
     
-     
-       
-        nav ul {
-            padding: 10px;
-        }
+nav li {
+    margin: 0 10px; /* Reduce spacing between nav items */
+}
     
-        nav li {
-            margin: 0 12px; /* Reduce spacing between nav items */
-        }
-    
-        nav a {
-            font-size: medium; /* Slightly reduce font size for links */
-        }
+nav a {
+    font-size: small; /* Slightly reduce font size for links */
+}
 
 nav a:hover{
     color: #66fcf1;
