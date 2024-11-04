@@ -92,19 +92,7 @@
             background-size: cover;
           }
             
-
-
-        
-        
-        
-
-      
-          
-     
-      
-   
-
-        h2 {
+h2 {
             font-family: "Roboto";
             font-weight: 700;
             color: #d3d9d4;
@@ -140,7 +128,7 @@
     }
         
         /*Pseudo Classes intergrated*/
-        nav:hover{
+        nav a:hover{
             color: #0b0c10;
             background-color: #66fcf1;
         }
